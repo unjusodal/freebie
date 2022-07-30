@@ -8,4 +8,9 @@ $(document).ready(function() {
       initialSlide: 1,
       focusOnSelect: true
     });
+
+    $('.faqs__accordion').accordion({
+      heightStyle: 'content',
+      header: '.accordion__header'
+    });
 });

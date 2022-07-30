@@ -1,0 +1,79 @@
+@import 'variables';
+
+.package {
+    text-align: center;
+}
+
+.package__plans {
+    margin-top: 40px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.plans__card {
+    position: relative;
+    width: 300px;
+    height: 370px;
+    background-color: $grey;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 180ms ease-in-out;
+
+    h3 {
+        font-weight: 400;
+    }
+
+    div {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.05rem;
+        line-height: 1.3rem;
+    }
+
+    b {
+        font-size: 1.6rem;
+
+        sup {
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-right: 3px;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: #FFF;
+        font-weight: 500;
+        font-size: 1.07rem;
+        color: $green;
+    }
+}
+
+.new-icon {
+    width: 35px;
+    position: absolute;
+    left: 35px;
+    top: 25%;
+}
+
+.plans__card:hover {
+    background-color: $black;
+    color: #FFF;
+    height: 400px;
+
+    button {
+        background-color: $green;
+        color: $black;
+    }
+}

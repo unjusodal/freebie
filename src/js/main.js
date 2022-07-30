@@ -2,13 +2,14 @@ function parallax() {
     var image = document.getElementsByClassName('parallax');
     new simpleParallax(image, {
         scale: 1.5, 
-        overflow: true
+        overflow: true,
+        maxTransition: 99
     });
 }
 function parallaxMax() {
     var image = document.getElementsByClassName('parallax-max');
     new simpleParallax(image, {
-        scale: 1.9, 
+        scale: 2.6, 
         overflow: true
     });
 }

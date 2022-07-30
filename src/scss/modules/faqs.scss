@@ -1,0 +1,45 @@
+@import 'variables';
+
+.faqs {
+    h2 {
+        margin-top: 70px;
+        text-align: center;
+    }
+}
+
+.faqs__accordion {
+    margin-top: 60px;
+}
+
+.accordion__header {
+    cursor: pointer;
+    padding: 40px 0;
+    font-size: 1.6rem;
+    position: relative;
+    
+    img {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        transition: transform 200ms ease-in-out;
+    }
+}
+
+.ui-accordion-header-active {
+    cursor: default;
+
+    img {
+        transform: rotate(-180deg);
+    }
+}
+
+.accordion__content {
+    padding-bottom: 30px;
+    border-bottom: 0.02rem solid rgba(128, 128, 128, 0.436);
+    
+    p {
+        width: 60%;
+    }
+}

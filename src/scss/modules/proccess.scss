@@ -1,0 +1,56 @@
+@import 'variables';
+
+.proccess {
+    margin: 150px 0;
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.proccess__text {
+    width: 550px;
+    align-self: flex-end;
+
+    h2 {
+        width: 430px;
+    }
+
+    .text__features {
+        margin-top: 50px;
+        display: flex;
+
+        div {
+            padding-right: 50px;
+
+            h3 {
+                font-size: 1.6rem;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+            
+            svg {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+.proccess__pic {
+    height: 330px;
+    width: 360px;
+    background-color: $black;
+    border-radius: 13px;
+    position: relative;
+
+    img {
+        position: absolute;
+        height: 400px;
+        top: 25px;
+        left: 13px;
+    }
+}
