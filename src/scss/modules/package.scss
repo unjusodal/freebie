@@ -77,3 +77,32 @@
         color: $black;
     }
 }
+
+@media (max-width: 970px) {
+    .plans__card {
+        padding: 30px 10px;
+
+        div {
+            font-size: 0.85rem;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .package__plans {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans__card {
+        height: 350px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 315px) {
+    .plans__card {
+        width: 100%;
+    }
+}

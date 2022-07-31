@@ -6,11 +6,24 @@ $(document).ready(function() {
       variableWidth: true,
       slidesToShow: 1,
       initialSlide: 1,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 700,
+          settings: {
+            centerMode: true
+          }
+        }
+      ]
     });
 
     $('.faqs__accordion').accordion({
       heightStyle: 'content',
       header: '.accordion__header'
     });
+
+    $('.menu-btn').click(function() {
+      $('.menu').toggleClass('menu--active')
+      $('.nav').toggleClass('nav--active')
+    })
 });
