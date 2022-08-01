@@ -59,7 +59,7 @@ function build() {
     return src([
         'src/index.html',
         'src/style.min.css',
-        'src/jQuery/*.js'
+        'src/js/*.js'
     ], {base: 'src'})
 
     .pipe(dest('dist'))
@@ -71,4 +71,4 @@ exports.compressImgs = compressImgs
 
 exports.default = parallel(watching, liveServer)
 
-exports.build = series(cleanDist,compressImgs, build)
+exports.build = series(cleanDist, compressImgs, build)
